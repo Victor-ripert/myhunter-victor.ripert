@@ -30,6 +30,8 @@ NAME	=	my_hunter
 
 OBJ	=	$(SRC:.c=.o)
 
+.PHONY = all re clean fclean
+
 all:		$(NAME)
 
 GRAPHIC = -l csfml-graphics
