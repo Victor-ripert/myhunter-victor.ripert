@@ -12,13 +12,13 @@
 display_t analyse_events(display_t DS)
 {
     if (DS.event.type == sfEvtClosed) {
-	    close_window(DS.window);
+        close_window(DS.window);
     }
     if (DS.event.type == sfEvtResized) {
         DS = resize_window(DS);
     }
     if (DS.event.type == sfEvtMouseButtonPressed) {
-	DS = manage_mouse_click(DS);
+    DS = manage_mouse_click(DS);
     }
     return DS;
 }

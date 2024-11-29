@@ -26,6 +26,7 @@ int my_hunter()
     sfClock_destroy(DS.clock);
     sfSprite_destroy(DS.sprite);
     sfTexture_destroy(DS.texture);
+    sfText_destroy(DS.score);
     sfRenderWindow_destroy(DS.window);
     return EXIT_SUCCESS;
 }

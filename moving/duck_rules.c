@@ -24,7 +24,7 @@ int duck_rules(display_t DS)
     }
     if (DS.mode.width == 1920 && DS.mode.height == 1080) {
         if (sprite_position.x > 1920 || sprite_position.y > 1080 || sprite_position.y < 0) {
-            new_position.y = rand()%970;
+            new_position.y = rand()%900;
             sfSprite_setPosition(DS.sprite, new_position);
             return 1;
         }

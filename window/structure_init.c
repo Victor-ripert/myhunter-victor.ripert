@@ -29,8 +29,8 @@ display_t structure_init(void)
     structure.start_pos.x = 0;
     structure.start_pos.y = 300;
     structure.missed_duck = 0;
-    structure.killed_duck = 0;
-    structure.font = sfFont_createFromFile("sprite/font/Arial.ttf");
-    structure.score = set_score(structure.score);
+    structure.killed_duck = 1;
+    structure.font = sfFont_createFromFile("sprite/font/arial.ttf");
+    structure.score = set_score(structure.score, structure.font);
     return structure;
 }

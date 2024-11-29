@@ -42,6 +42,6 @@ display_t analyse_events(display_t DS);
 display_t manage_mouse_click(display_t DS);
 int duck_shoot(display_t DS);
 display_t resize_window(display_t DS);
-sfText *set_score(sfText *score);
+sfText *set_score(sfText *score, sfFont *font);
 display_t score(display_t DS);
 #endif /* HUNTER_STRUCTURE_H */
